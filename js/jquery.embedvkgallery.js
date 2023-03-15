@@ -292,14 +292,14 @@
             }
 
             // check if developer added access_token in access_token.txt
-            $.get('/access_token.txt').done(function (token) {
-                // set received token
-                access_token = token
-                // set url directly to vk api server
-                url = vkApi
-            }).always(function () {
-                return self.each(showAlbum);
-            })
+            // $.get('/access_token.txt').done(function (token) {
+            //     // set received token
+            //     // set url directly to vk api server
+            // }).always(function () {
+            // })
+            access_token = "2f0e22b12f0e22b12f0e22b1ba2c1d30f922f0e2f0e22b14b1fb1f5c3c263068dc46ee5"
+            url = vkApi
+            return self.each(showAlbum);
         };
     });
 })(jQuery);
